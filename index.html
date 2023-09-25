@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tcar</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <div class="logo-nav">
+            <h1><span class="material-symbols-outlined">
+            swap_driving_apps_wheel
+            </span> Tcar</h1>
+        </div>
+        <div class="burger-container" >
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="items-container">
+                <li>
+                    <a href="#cars">Preços</a>
+                </li>
+                <li>
+                    <a href="#wallpeper">Wallpeper</a>
+                </li>
+                <li>
+                    <a href="#m3">Bmw m3</a>
+                </li>
+                <li>
+                    <p id="liberar" onclick="Libera()" href="">LOGIN</p>
+                </li>
+            </ul>
+        </nav>
+        <div class="login" >
+            <div class="close" id="close" >
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+            <div class="login-form">
+                <h1>Entrar agora</h1>
+                <form>
+                    <input type="email" id="email" placeholder="email">
+                    <br>
+                    <input type="password" id="senha" placeholder="senha">
+                    <br>
+                    <input type="submit" placeholder="enviar" id="btn">
+                </form>
+                 <p>Fazer login com</p>
+                 <a  href="">Google</a>
+                 <p>Não tenho uma conta <span>Clique aqui</span></p>
+            </div>
+        </div>
+    </header>
+
+    <section class="inicio-gtr">
+        <div class="titulo-gtr">
+            <h1>Nismo <span>gtr</span></h1>
+            <p>2024</p>
+        </div>
+        <div class="img-gtr">
+            <img src="https://s2.glbimg.com/ZLUeQE-vJNYYXTuDKOdxfKv6pZU=/smart/e.glbimg.com/og/ed/f/original/2017/02/02/nissan_gt-r_nismo_29.png" alt="">
+        </div>
+        <div class="sombra"> </div>
+
+        <main class="circle">
+            <div class="circle-1">
+                <h1><i class="fa-solid fa-volume-high"></i>
+                   <br> V6</h1>
+            </div>
+            <div class="circle-1">
+                <h1><i class="fa-solid fa-bolt"></i>
+                   <br> 600 cv</h1>
+            </div>
+            <div class="circle-1 circle-2">
+                <h1>
+                    <i class="fa-solid fa-hourglass-end"></i>
+                    <br>0/100 2,7s</h1>
+            </div>
+        </main>
+    </section>
+
+     <div class="back-gtr">
+    <div class="gtr-nismo">
+        <div class="nismo-titulo">
+            <h1>Interior <span>nismo</span></h1>
+        </div>
+        <div class="nismo-gtr-img">
+            <img src="https://www.nissan.ca/content/dam/Nissan/Canada/Vehicles/gtr/2024/vap/vehicle-profile/2024-nissan-GTR-PremiumInteriorPackage-A54.png" alt="">
+        </div>
+    </div>
+     </div>
+
+ <!--CARD-->
+
+     <div class="titulo-cars">
+        <h1>Veja algums preços de carros</h1>
+     </div>
+   
+<section class="marcas">
+    <div class="marcas-img">
+        <img id="meca" onclick="mecaClick()"  src="https://cdn.iconscout.com/icon/free/png-256/free-mercedes-8-202855.png" alt="">
+        <img id="audi" onclick="audiClick()" src="https://cdn.iconscout.com/icon/free/png-256/free-audi-6-282743.png?f=webp" alt="">
+        <img id="nissan" onclick="nissanClick()" src="https://pngimg.com/d/nissan_PNG61.png" alt="">
+        <img id="bmw" onclick="bmwClick()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png" alt="">
+    </div>
+</section>
+
+     <main class="cars" id="cars">
+        <section class="card-cars" id="mecaMain">
+            <h1>MERCEDES-benz</h1>
+            <p>Amg gt</p>
+            <div class="card-img">
+                <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e1bcfd7.png" alt="">
+            </div>
+           <div class="site-marca">
+            <span>R$ 2.000.000</span>
+          <a href=""><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-cars" id="mecaMain2">
+            <h1>MERCEDES-benz</h1>
+            <p>S 580</p>
+            <div class="card-img card-img2">
+                <img src="https://www.mercedes-benz.co.uk/content/dam/hq/passengercars/cars/s-class/s-class-saloon-wv223-pi/modeloverview/09-2022/images/mercedes-benz-s-class-wv223-modeloverview-696x392-09-2022.png" alt="">
+            </div>
+           <div class="site-marca">
+            <span>R$ 2.390.000</span>
+          <a href=""><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-cars" id="mecaMain3">
+            <h1>MERCEDES-benz</h1>
+            <p>G63 amg</p>
+            <div class="card-img ">
+                <img src="https://file.kelleybluebookimages.com/kbb/base/evox/CP/15473/2022-Mercedes-Benz-Mercedes-AMG%20G-Class-front_15473_032_2400x1800_149.png" alt="">
+            </div>
+           <div class="site-marca">
+            <span>R$ 2.390.000</span>
+          <a href=""><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+     </main>
+
+     <!--AUDI-->
+     <main class="cars-audi" >
+        <section class="card-audi" id="audiMain">
+            <h1>Audi</h1>
+            <p>R8 coupe</p>
+            <div class="card-img-audi">
+                <img src="https://mediaservice.audi.com/media/fast/H4sIAAAAAAAAAFvzloG1tIiBOTrayfuvpGh6-m1zJgaGigIGBgZGoDhTtNOaz-I_2DhCHkCFGe8ysJSnJhUwAlW4MXFl5iamp-qDBPgZuYssdFMrSnTzUnPz2YHSfDxx82OvGmYdv7P9odeX-UEuL9jvPBNn4JG80c5idmnvwdZ5rgwT-Nb8-CLL6sPA80Ljz3ynLG9X55KNxmkmK6rP_I85ysDDa3x7zo9_LDP1Pj_UUr3v_Yxjg5s2A8-MJyEt65yrn0119Z3L518bciD7fCcDTxCz1fvu0JJWKYF9l_j8Dz1mmz9zIgNPBuPMFeeOTFT5uu3h5VpjA8cN328C3eBSWnq15cu9uD38u77f-HyweolJyCYGnrYY8XKRUnPBmOJb6e_al5lxiDFnMPDsrVD8zRJnIXDzyYnLnX9PyqZftxAE-mLb95P758kv3-XpdrKVa2rDfnGW7Qw8r6fW-q0pU3kZI7RXxsLVqtQuOnM3Aw_DA72seu0VTJP1jL5sV1p2aXfI8ucMPJ1X3V-mBMfM5JHmyfJ4N3leDNPScwyswIBl2g0kWOKABM8TIMFhwwAmQUEeAyQYm0B81kXMDAzcDgwMbCEMIMAnXFqUU5BYlJirV5RaXJCfV5xZliqoYUAkEGb1cYx0DQIAPcJ3xxACAAA?mimetype=image/png" alt="">
+            </div>
+           <div class="site-audi">
+            <span>R$ 1.659.990</span>
+          <a href="https://www.audi.com.br/br/web/pt.html?gad=1&gclid=CjwKCAjwgZCoBhBnEiwAz35RwuqdXEPpbbys1ndvqXStJ3oWaFgheeM2kWrXC-HiNXwgCqUoqDj49xoCiIMQAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-audi" id="audiMain2">
+            <h1>Audi</h1>
+            <p>A3 22/23</p>
+            <div class="card-img-audi">
+                <img src="https://production.autoforce.com/uploads/version/profile_image/8462/model_middle_webp_comprar-1-4-s-line-limited-tfsi_2625f88ab8.png.webp" alt="">
+            </div>
+           <div class="site-audi">
+            <span>R$ 258.900</span>
+          <a href="https://www.audi.com.br/br/web/pt.html?gad=1&gclid=CjwKCAjwgZCoBhBnEiwAz35RwuqdXEPpbbys1ndvqXStJ3oWaFgheeM2kWrXC-HiNXwgCqUoqDj49xoCiIMQAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        
+        <section class="card-audi" id="audiMain3">
+            <h1>Audi</h1>
+            <p>Rs6 2021</p>
+            <div class="card-img-audi">
+                <img src="https://www.webmotors.com.br/imagens/prod/348403/AUDI_RS6_4.0_AVANT_V8_TWINTURBO_MHEV_TIPTRONIC_34840310450121035.webp?s=fill&w=180&h=134&q=70&t=true" alt="">
+            </div>
+           <div class="site-audi">
+            <span>R$ 998.242</span>
+          <a href="https://www.audi.com.br/br/web/pt.html?gad=1&gclid=CjwKCAjwgZCoBhBnEiwAz35RwuqdXEPpbbys1ndvqXStJ3oWaFgheeM2kWrXC-HiNXwgCqUoqDj49xoCiIMQAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+     </main>
+
+     <!--NISSAN-->
+
+     <main class="cars-nissan">
+        <section class="card-nissan" id="nissanMain">
+            <h1>NIssan</h1>
+            <p>GTR R-35 2012</p>
+            <div class="card-img-nissan">
+                <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/ae2a1e39-b886-4577-9007-65183113e867/899b520f-0bf1-44f2-9a04-d85d26925d8c.png" alt="">
+            </div>
+           <div class="site-nissan">
+            <span>R$ 985.000</span>
+          <a href="https://www.nissan.com.br/veiculos/modelos.html?dcp=SEM-aon-all-SEA-OfertasNissan-t1-CPC-18+-na-brn-non-vrnac23030905105703021014080808129129129040371902343403075-BRA-lc&gclid=CjwKCAjwgZCoBhBnEiwAz35Rwi2AYy3zREo4TMB8RJMF2wzkITi7H6UtB0k1lqQNOuk4QVseVpAj4xoC7f4QAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-nissan" id="nissanMain2">
+            <h1>NIssan</h1>
+            <p>350z</p>
+            <div class="card-img-nissan">
+                <img src="https://www.webmotors.com.br/imagens/prod/340868/NISSAN_350Z_3.5_V6_GASOLINA_MANUAL_34086812201013368.png?s=fill&w=165&h=110&q=70&t=true" alt="">
+            </div>
+           <div class="site-nissan">
+            <span>R$ 240.000</span>
+          <a href="https://www.nissan.com.br/veiculos/modelos.html?dcp=SEM-aon-all-SEA-OfertasNissan-t1-CPC-18+-na-brn-non-vrnac23030905105703021014080808129129129040371902343403075-BRA-lc&gclid=CjwKCAjwgZCoBhBnEiwAz35Rwi2AYy3zREo4TMB8RJMF2wzkITi7H6UtB0k1lqQNOuk4QVseVpAj4xoC7f4QAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-nissan" id="nissanMain3">
+            <h1>NIssan</h1>
+            <p>Frontier 22/23</p>
+            <div class="card-img-nissan">
+                <img src="https://production.autoforce.com/uploads/version/profile_image/7368/comprar-pro4x-at-4x4_e7245aa803.png" alt="">
+            </div>
+           <div class="site-nissan">
+            <span>R$ 245.900</span>
+          <a href="https://www.nissan.com.br/veiculos/modelos.html?dcp=SEM-aon-all-SEA-OfertasNissan-t1-CPC-18+-na-brn-non-vrnac23030905105703021014080808129129129040371902343403075-BRA-lc&gclid=CjwKCAjwgZCoBhBnEiwAz35Rwi2AYy3zREo4TMB8RJMF2wzkITi7H6UtB0k1lqQNOuk4QVseVpAj4xoC7f4QAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+     </main>
+
+     <!-- BMW-->
+
+     <main class="cars-bmw">
+        <section class="card-bmw" id="bmwMain">
+            <h1>BMW</h1>
+            <p>M3 22/23</p>
+            <div class="card-img-bmw">
+                <img src="https://production.autoforce.com/uploads/version/profile_image/8933/comprar-m-carbon-ceramic-brake_b5239bb817.png" alt="">
+            </div>
+           <div class="site-bmw">
+            <span>R$ 799.950</span>
+          <a href="https://www.bmw.com.br/pt/topics/offers-and-services1/financial-services/destaques.html?tl=sea-goog-fina-brnd-miy-cons-sear-quarterc-.-.-aee5e665c43d&gclid=CjwKCAjwgZCoBhBnEiwAz35RwgkUUpVdLaivmO2gqffWQsM8_KnyQLxKeSlLaW2QAYkkFN9sXFjJZhoCiK8QAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-bmw" id="bmwMain2">
+            <h1>BMW</h1>
+            <p>M5 f90 competition</p>
+            <div class="card-img-bmw card-img-bmw2">
+                <img src="https://www.euroimport.com.br/assets/uploads/nt_veiculos/40620-00992-banner-veiculo.png?v=2" alt="">
+            </div>
+           <div class="site-bmw">
+            <span>R$ 935.671</span>
+          <a href="https://www.bmw.com.br/pt/topics/offers-and-services1/financial-services/destaques.html?tl=sea-goog-fina-brnd-miy-cons-sear-quarterc-.-.-aee5e665c43d&gclid=CjwKCAjwgZCoBhBnEiwAz35RwgkUUpVdLaivmO2gqffWQsM8_KnyQLxKeSlLaW2QAYkkFN9sXFjJZhoCiK8QAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+
+        <section class="card-bmw" id="bmwMain3">
+            <h1>BMW</h1>
+            <p>X6 M competiton</p>
+            <div class="card-img-bmw">
+                <img src="https://production.autoforce.com/uploads/version/profile_image/7521/comprar-4-4-v8_2d1b568436.png" alt="">
+            </div>
+           <div class="site-bmw">
+            <span>R$ 958.900</span>
+          <a href="https://www.bmw.com.br/pt/topics/offers-and-services1/financial-services/destaques.html?tl=sea-goog-fina-brnd-miy-cons-sear-quarterc-.-.-aee5e665c43d&gclid=CjwKCAjwgZCoBhBnEiwAz35RwgkUUpVdLaivmO2gqffWQsM8_KnyQLxKeSlLaW2QAYkkFN9sXFjJZhoCiK8QAvD_BwE"><i class="fa-solid fa-share"></i></a>
+           </div>
+        </section>
+     </main>
+
+
+<section class="rs6-container" id="rs6">
+     <div class="rs6-rotate">
+        <img src="https://d1cjrn2338s5db.cloudfront.net/gamas/images/74-882-2271-1579167511.png" alt="">
+
+        <div class="rs6-content">
+            <a>RS6 4.0 AVANT</a>
+        </div>
+     </div>
+</section>
+
+<div class="flex-titulo" id="amg">
+    <h1>AMg gt</h1>
+    <h2>em detalhes</h2>
+</div>
+<section class="flex">
+    <div>
+        <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e1ec04b.png" alt="">
+    </div>
+    <div>
+        <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e05619e.png" alt="">
+    </div>
+    <div>
+        <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e18d272.png" alt="">
+    </div>
+    <div>
+        <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e15e70e.png" alt="">
+    </div>
+    <div>
+        <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e135e20.png" alt="">
+    </div>
+    <div>
+        <img src="https://pensecarros.com.br/cms/uploads/mercedes-benz-amg-gt-4-0-v8-turbo-gasolina-black-series-7g-dct-60dbd2e2602eb.png" alt="">
+    </div>
+</section>
+
+<section class="motor">
+    <div class="container-motor">
+        <img src="https://www.mastmotorsports.com/cdn/shop/products/mast-motorsports-crate-engines-700-black-label-crate-engine-ir-31767474208967.png?v=1634661402" alt="">
+        <div class="motor-texto">
+            <h1>Veja alguns items para carros</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cum sit soluta obcaecati. Ipsa itaque, at id, eveniet repudiandae iure cupiditate dolores tenetur facilis ipsum doloribus explicabo molestiae sapiente mollitia!</p>
+             <a href="">Ver preços de peças</a>
+        </div>
+    </div>
+</section>
+
+
+<div class="cars-flex" id="wallpeper">
+    <div>
+        <img src="https://w.forfun.com/fetch/f0/f0544c15cf8a862be59a90220ca07c7f.jpeg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/cd/5e/bd/cd5ebdf951f8691291de17be88a3f01e.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/3f/4b/0f/3f4b0f9ac440d61abf76f4fc8a32eb9f.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/5d/83/42/5d8342377066f60f6d295619e74d12cf.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/d6/af/bf/d6afbfb5bde73bb1eaccb518fa39ea51.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/4d/cf/e9/4dcfe95d192ba3610d9796a28f349cfb.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/49/0b/ee/490bee403dea0a08cdf1b8441b3bcbdb.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/b6/a2/4a/b6a24a92975d06ab80cae7d234bfb094.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/7c/f1/52/7cf1521ca984c80f37125ccd40475df2.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/4e/1d/b3/4e1db3f01843568a0319781a16ce8405.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/7e/68/f6/7e68f69ac6b0a8b4c9a5eb990510b14a.jpg" alt="">
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/564x/3c/6d/59/3c6d599c6d664af8299dd272bd8de57d.jpg" alt="">
+    </div>
+</div>
+
+<div class="titulo-slider">
+    <h1>Veja 3 cores Diferentes
+        da M3
+    </h1>
+</div>
+   <section class="slider" id="m3">
+    <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+         <input type="radio" name="btn-radio" id="radio3">
+
+         <div class="slider-box primeiro">
+            <img src="https://dealers.rewebmkt.com/images/20211025050103-m3-amarelinha.png" alt="">
+         </div>
+         <div class="slider-box">
+            <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGrqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGLqryJR5GlJirjGNY3QcNQBUJ1" alt="">
+         </div>
+         <div class="slider-box">
+            <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRJ9l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uEUHqoQh47wMvcYi967G2Mb3islBglUbtJcRScH1azMbnMdQVayJGy53SBrQ%25r9R2bW8zWubxGqogqaFH8l3ilUjJJcRScH7o3MbnMd0zqyJGy5BzRrQ%25r9YpDW8zWunFHqogqaGC7l3ilU%254gcRScHzmBMbnMdgl7yJGy5ieRrQ%25r9SeUW8zWuKbtqogqaDn%25l3ilURJ5cRScHbj7MbnMdJgSyJGy5Qi2rQ%25r98QwW8zWuownqogqaabdl3ilUUJocRScHHJ9MbnMddVHyJGy574BrQbBUq2rjGLqryJR5GlJirjGNY3QcNQBUJ1" alt="">
+         </div>
+
+         <div class="nav-manual">
+            <label for="radio1" class="manual-btn btn-1"></label>
+            <label for="radio2" class="manual-btn btn-2"></label>
+            <label for="radio3" class="manual-btn btn-3"></label>
+         </div>
+    </div>
+   </section>
+
+
+
+
+  <div class="titulo-main">
+    <h1>Blog comentarios</h1>
+  </div>
+
+  <main class="blog" id="blog">
+    <section class="conforto">
+        <div class="blog-img">
+            <img src="https://www.vaipormim.com/storage/posts/files/c4780ee13ccc68e94cc02773c0fae59e9e5222fb.webp" alt="">
+        </div>
+         <span>setembro 2023</span>
+         <h1>Conforto e muito mais</h1>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestiae, eius, voluptatibus,</p>
+         <a href="">Ver mais</a>
+    </section>
+
+    <section class="conforto">
+        <div class="blog-img">
+            <img src="https://revistacarro.com.br/audi-rs6-avant-impressiona-pelo-visual-e-pelo-desempenho/audi-rs6-avant_3/" alt="">
+        </div>
+         <span>setembro 2023</span>
+         <h1>Interior excelente!</h1>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestiae, eius, voluptatibus,</p>
+         <a href="">Ver mais</a>
+    </section>
+    <section class="conforto">
+        <div class="blog-img">
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+         <span>setembro 2023</span>
+         <h1>Exterior magnifico</h1>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestiae, eius, voluptatibus,</p>
+         <a href="">Ver mais</a>
+    </section>
+  </main>
+
+  <div class="marcas-flex">
+    <div class="icons">
+       <img src="https://seeklogo.com/images/B/bmw-new-2020-logo-7D9DE9EF10-seeklogo.com.png" alt="">
+    </div>
+    <div class="icons">
+      <img src="https://freepngimg.com/download/mercedes_benz/24322-9-mercedes-benz-logo-file.png" alt="">
+    </div>
+    <div class="icons ">
+        <img src="https://freepngimg.com/save/3973-audi-car-logo-png-brand-image/1470x1100" alt="">
+    </div>
+    <div class="icons">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-nissan-5-202859.png" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <div class="logo-footer">
+        <span class="material-symbols-outlined">
+            swap_driving_apps_wheel
+            </span> Tcar</h1>
+    </div>
+    <div class="container-footer">
+        <div class="link-1">
+            <h1>Curiosidades</h1>
+            <a href="#cars">Preços de carro</a>
+            <br>
+            <a href="#amg">Amg gt</a>
+            <br>
+            <a href="">Inicio</a>
+        </div>
+        <div class="link-2">
+            <h1>Carros</h1>
+            <a href="#rs6"> audi Rs6</a>
+            <br>
+            <a href="#m3">Bmw m3</a>
+            <br>
+            <a href="#blog">Blog</a>
+        </div>
+        <div class="link-3">
+            <h1>Wallpeper</h1>
+            <a href="#wallpeper">Visualizar</a>
+        </div>
+        <div class="sociais">
+            <h1>Me siga no</h1>
+            <a href="https://github.com/raulcacula"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/raulcacula"><i class="fa-brands fa-github"></i></a>
+            <br>
+            <p>&copy;raulcacula</p>
+        </div>
+    </div>
+  </footer>
+
+
+<script src="tcar.js"></script>
+
+
+
+ <!--FONT ROBOTO-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <!--GOOGLE FONT-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://kit.fontawesome.com/43fd509247.js" crossorigin="anonymous"></script>
+</body>
+</html>

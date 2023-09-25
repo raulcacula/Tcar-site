@@ -1,0 +1,1258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    min-height: 1000vh;
+    overflow-x: hidden !important;
+}
+section{
+    margin-top: 100px;
+}
+header{
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+}
+.logo-nav{
+    color: white;
+    font-family: sans-serif;
+
+}
+.logo-nav h1{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.items-container{
+    display: flex;
+    align-items:center;
+    gap: 2rem;
+}
+.items-container a{
+    text-decoration: none;
+    font-family: 'poppins';
+    font-weight: 800;
+    color: white;
+    position: relative;
+}
+.items-container a::after{
+    content:  '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: brown;
+    width: 0%;
+    height: 2px;
+    transition: .5s ease-in-out all;
+}
+.items-container a:hover::after{
+    width: 100%;
+}
+.items-container p{
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to left, brown , black);
+    padding: .7rem;
+    border-radius: 8px;
+    transition: .5s all;
+}
+.items-container p:hover{
+    background: brown;
+}
+.close{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.login{
+    display: none;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    line-height: 2;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1;
+    margin: 0 auto;
+    animation:login .5s ease-in-out forwards;
+}
+@keyframes login{
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.login-form{
+    background: white;
+    max-width: 350px;
+    margin:100px  auto;
+    max-height: 999px;
+    flex-direction: column;
+}
+.login-form h1{
+    font-family: 'Roboto';
+}
+form{
+    line-height: 4;
+}
+#email{
+    width:300px;
+    height: 40px;
+    text-indent: 10px;
+    border-width: 1px;
+    border-color: gainsboro;
+}
+#senha{
+    width: 300px;
+    height: 40px;
+    text-indent: 10px;
+    line-height: 3;
+    border-width: 1px;
+    border-color: gainsboro;
+}
+#btn{
+    width: 300px;
+    height: 40px;
+    background: brown;
+    color: white;
+    cursor: pointer;
+}
+form{
+    flex-direction: column;
+}
+.login-form p{
+    font-family: 'poppins';
+    font-weight: 700;
+}
+.login-form span{
+    color: brown;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-form a{
+    text-decoration: none;
+    background:linear-gradient(to left , brown 50%, black 50%);
+    padding: 1rem 3rem;
+    line-height: 4;
+    color: white;
+}
+.login-form a:hover{
+    background: linear-gradient(to left , black 50% , brown 50%);
+}
+.burger-container{
+    display: none;
+}
+@media(max-width:700px){
+    .burger-container {
+        display:block;
+        color: white;
+        cursor: pointer;
+    }
+    .burger-container i{
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        right: 100px;
+        cursor: pointer;
+        color: white;
+        font-size: 35px;
+    }
+    .items-container{
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2rem;
+        justify-content: center;
+        line-height: 2;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+        z-index: 1;
+        animation:login .5s ease-in-out forwards;
+    }
+    .items-container li{
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    
+}
+/*INICIO*/
+
+section.inicio-gtr{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.img-gtr{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    margin-top: -100px;
+}
+.img-gtr img{
+    width: auto;
+    height: auto;
+}
+.titulo-gtr{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: white;
+}
+.titulo-gtr span{
+    color: red;
+    text-transform: uppercase;
+}
+.sombra{
+    background: #7e7e7e;
+    width: 420px;
+    height: 7px;
+    border-radius: 50%;
+    margin: -60px auto;
+    box-shadow: 0 0 8px 8px #7c7c7c;
+}
+.titulo-gtr p{
+    font-family: 'poppins';
+    line-height: 3;
+}
+@media(max-width:600px){
+    .img-gtr img{
+        width: 120%;
+        height: auto;
+        margin-top: 50px;
+    }
+    .sombra{
+        background: #7e7e7e;
+        width: 300px;
+        height: 7px;
+        border-radius: 50%;
+        margin: -50px auto;
+        box-shadow: 0 0 8px 8px #7c7c7c;
+    }
+}
+main.circle{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 120px;
+    gap: 5rem;
+}
+.circle-1 i{
+    color: gainsboro;
+}
+.circle-1 h1{
+    font-family: 'poppins';
+    font-weight: 800;
+    font-size: 18px;
+    color: white;
+}
+.circle-2 i{
+    animation: tempoicon 5s ease-in infinite;
+}
+@keyframes tempoicon{
+    100%{transform: rotate(360deg);}
+}
+.interior-gtr{
+    width: 100%;
+    height: calc(100vh);
+    background:  url(https://st.motortrendenespanol.com/uploads/sites/45/2016/09/2017-Nissan-GT-R-Nismo-interior-view.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+}
+.interior-gtr img{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 0 40px 0;
+}
+.back-gtr{
+    margin-top: 100px;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),  url(https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/574c77d40e2163457507796c2017_nissan_nismo_gtr_09.jpeg?quality=70&strip=all&strip=all) no-repeat 50% 50%;
+    background-position: center;
+    height: calc(80vh);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gtr-nismo{
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+}
+.nismo-titulo h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+   
+    text-transform: uppercase;
+    line-height: 10;
+}
+.nismo-titulo span{
+    color: red;
+}
+.nismo-gtr-img {
+    width: 500px;
+    height: auto;
+    right: 0;
+    margin-top: 200px;
+    position: absolute;
+}
+.nismo-gtr-img img{
+    width: 100%;
+}
+@media(max-width:600px){
+    .nismo-gtr-img img{
+        width: 100%;
+       margin-right: -200px;
+    }
+    .back-gtr{
+        margin-top: 100px;
+        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),  url(https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/574c77d40e2163457507796c2017_nissan_nismo_gtr_09.jpeg?quality=70&strip=all&strip=all) no-repeat 50% 50%;
+        background-position: center;
+        height: calc(80vh);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        background-attachment: fixed;
+    }
+}
+.marcas{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.marcas-img{
+    display: flex;
+    gap: 5rem;
+}
+.marcas-img img{
+    width: 50px;
+    height: auto;
+}
+#meca{
+    background-color: gray;
+        padding: .3rem;
+        border-radius: 50%;
+        transition: .5s;
+}
+
+
+#meca:hover{
+    background-color: gray;
+    padding: .3rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+#audi:hover{
+    background-color: gray;
+    padding: .3rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+#nissan:hover{
+    background-color: gray;
+    padding: .3rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+#bmw:hover{
+    background-color: gray;
+    padding: .3rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+@media(max-width:600px){
+  .marcas-img{
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+.titulo-cars h1{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'poppins';
+    font-weight: 800;
+}
+
+main.cars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: -30px;
+}
+main.cars section.card-cars{
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    background: #f4f4f4d5;
+    border-width: 1px;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    max-width: 250px;
+    max-height:250px;
+    margin-left: 30px;
+
+}
+main.cars section.card-cars:first-child{
+    margin-left: 0;
+}
+main.cars section.card-cars .card-img{
+    max-width: 200px;
+    max-height: 110px;
+}
+main.cars section.card-cars img{
+    width: 100%;
+    margin-top: 10px;
+}
+main.cars section.card-cars h1{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+main.cars section.card-cars p{
+    font-family: 'poppins';
+    font-weight: 800;
+    color: white;
+}
+.site-marca{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.site-marca span{
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+.site-marca a{
+    text-align: right;
+    background: brown;
+    width: 30px;
+    height: 30px;
+    margin-right: -16px;
+    align-items: center;
+    border-radius: 2px;
+}
+.site-marca i{
+    color: white;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+@media screen and (min-width:200px) and (max-width:820px) {
+    main.cars{
+        flex-direction: column;
+    }
+    main.cars section.card-cars{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        max-width: 500px;
+        max-height:250px;
+    }
+    main.cars section.card-cars .card-img{
+        max-width: 300px;
+        max-height: 100px;
+        justify-content: center;
+        right: 0;
+        margin: auto;
+    }
+    main.cars section.card-cars img{
+        width: 100%;
+        margin-top: -50px;
+    }
+    main.cars section.card-cars .card-img2 img{
+        margin-top: -10px;
+    }
+    .site-marca{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .titulo-cars{
+        font-size: 14px;
+    }
+}
+/* site audi */
+main.cars-audi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: -100px;
+}
+main.cars-audi section.card-audi{
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    background: #f4f4f4d5;
+    border-width: 1px;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    max-width: 250px;
+    max-height:250px;
+    margin-left: 30px;
+}
+main.cars-audi section.card-audi:first-child{
+    margin-left: 0;
+}
+main.cars-audi section.card-audi .card-img-audi{
+    max-width: 200px;
+    max-height: 110px;
+}
+main.cars-audi section.card-audi img{
+    width: 100%;
+    margin-top: 10px;
+}
+main.audi ,section.card-audi h1{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+main.audi, section.card-audi p{
+    font-family: 'poppins';
+    font-weight: 800;
+    color: white;
+}
+.site-audi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.site-audi span{
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+.site-audi a{
+    text-align: right;
+    background: brown;
+    width: 30px;
+    height: 30px;
+    margin-right: -16px;
+    align-items: center;
+    border-radius: 2px;
+}
+.site-audi i{
+    color: white;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+@media screen and (min-width:200px) and (max-width:820px) {
+    main.cars-audi {
+        flex-direction: column;
+    }
+    main.cars-audi  section.card-audi {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        max-width: 500px;
+        max-height:250px;
+    }
+    main.cars-audi  section.card-audi .card-img-audi{
+        max-width: 300px;
+        max-height: 100px;
+        justify-content: center;
+        right: 0;
+        margin: auto;
+    }
+    main.cars-audi section.card-audi  img{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .site-audi{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+/*NISSAN*/
+main.cars-nissan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: -50px;
+}
+main.cars-nissan section.card-nissan{
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    background: #f4f4f4d5;
+    border-width: 1px;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    max-width: 250px;
+    max-height:250px;
+    margin-left: 30px;
+}
+main.cars-nissan section.card-nissan:first-child{
+    margin-left: 0;
+}
+main.cars-nissan section.card-nissan .card-img-nissan{
+    max-width: 200px;
+    max-height: 110px;
+}
+main.cars-nissan section.card-nissan img{
+    width: 100%;
+    margin-top: 10px;
+}
+main.cars-nissan ,section.card-nissan h1{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+main.cars-nissan, section.card-nissan p{
+    font-family: 'poppins';
+    font-weight: 800;
+    color: white;
+}
+.site-nissan{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.site-nissan span{
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+.site-nissan a{
+    text-align: right;
+    background: brown;
+    width: 30px;
+    height: 30px;
+    margin-right: -16px;
+    align-items: center;
+    border-radius: 2px;
+}
+.site-nissan i{
+    color: white;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+@media screen and (min-width:200px) and (max-width:820px) {
+    main.cars-nissan {
+        flex-direction: column;
+    }
+    main.cars-nissan  section.card-nissan {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        max-width: 500px;
+        max-height:250px;
+    }
+    main.cars-nissan  section.card-nissan .card-img-nissan{
+        max-width: 300px;
+        max-height: 100px;
+        justify-content: center;
+        right: 0;
+        margin: auto;
+    }
+    main.cars-nissan section.card-nissan  img{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .site-nissan{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+/*BMbmw*/
+main.cars-bmw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: -50px;
+}
+main.cars-bmw section.card-bmw{
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    background: #f4f4f4d5;
+    border-width: 1px;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    max-width: 250px;
+    max-height:250px;
+    margin-left: 30px;
+
+}
+main.cars-bmw section.card-bmw:first-child{
+    margin-left: 0;
+}
+main.cars-bmw section.card-bmw .card-img-bmw{
+    max-width: 200px;
+    max-height: 110px;
+}
+main.cars-bmw section.card-bmw img{
+    width: 100%;
+    margin-top: 10px;
+}
+main.cars-bmw ,section.card-bmw h1{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+main.cars-bmw, section.card-bmw p{
+    font-family: 'poppins';
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+}
+.site-bmw{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.site-bmw span{
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+.site-bmw a{
+    text-align: right;
+    background: brown;
+    width: 30px;
+    height: 30px;
+    margin-right: -16px;
+    align-items: center;
+    border-radius: 2px;
+}
+.site-bmw i{
+    color: white;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+@media screen and (min-width:200px) and (max-width:820px) {
+    main.cars-bmw {
+        flex-direction: column;
+    }
+    main.cars-bmw  section.card-bmw{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        max-width: 500px;
+        max-height:250px;
+    }
+    main.cars-bmw  section.card-bmw .card-img-bmw{
+        max-width: 300px;
+        max-height: 100px;
+        justify-content: center;
+        right: 0;
+        margin: auto;
+    }
+    main.cars-bmw section.card-bmw  img{
+        width: 100%;
+        margin-top: -50px;
+    }
+    .site-bmw{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    main.cars-bmw section.card-bmw .card-img-bmw2 img{
+        width: 100%;
+        margin-top: -50px;
+        margin-top: -1px;
+    }
+}
+#mecaMain,#mecaMain2,#mecaMain3{
+    animation: opacityShow .5s ease-in forwards;
+}
+#audiMain,#audiMain2,#audiMain3{
+    display: none;
+    animation: opacityShow .5s ease-in forwards;
+}
+#nissanMain,#nissanMain2,#nissanMain3{
+    display: none;
+    animation: opacityShow .5s ease-in forwards;
+}
+#bmwMain,#bmwMain2,#bmwMain3{
+    display: none;
+    animation: opacityShow .5s ease-in-out forwards;
+}
+@keyframes opacityShow{
+     0%{
+        opacity: 0;
+        filter: blur(5px);
+   
+     }
+     100%{
+        opacity: 1;
+        filter: blur(0px);
+
+     }
+}
+.rs6-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.rs6-rotate img{
+    width: 700px;
+    height: auto;
+    rotate: 91deg;
+}
+.rs6-content a{
+    color: white;
+     font-family: 'poppins';
+     background-color: hsla(0,0%,100%,.1);
+     padding: 1rem;
+     backdrop-filter: blur(16px);
+     font-size: 22px;
+     position: absolute;
+   }
+   .flex-titulo{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top:200px ;
+    text-transform: uppercase;
+    font-family:'poppins';
+    font-weight: 800;
+    letter-spacing: 5px;
+   }
+   .flex-titulo h1{
+    color: red;
+   }
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #ffffff;
+}
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.flex img{
+    max-width: 100%;
+    display: block;
+}
+section.motor{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    margin-top: 100px; 
+}
+.container-motor{
+    display: inline-flex;
+}
+.container-motor img{
+    width: 300px;
+    margin-top: -50px;
+}
+.motor-texto{
+    padding: 4rem;
+    color: white;
+
+}
+.motor-texto h1{
+    font-family: 'roboto';
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.motor-texto p{
+    font-family: 'poppins';
+    font-weight: 500;
+}
+.motor-texto a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 3;
+    font-family: 'poppins';
+    position: relative;
+    }
+.motor-texto a::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: red;
+    position: absolute;
+    transition: .5s all ease-in-out;
+}
+.motor-texto a:hover::after{
+    width: 100%;
+}
+@media(max-width:700px){
+    section.motor{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .container-motor{
+        flex-direction: column;
+    }
+    .container-motor h1{
+        margin-top: -80px;
+    }
+}
+.cars-flex{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cars-flex img{
+    max-width: 100%;
+    display: block;
+}
+.cars-flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.cars-flex img:hover{
+    filter: opacity(.7);
+}
+.cars-flex img:hover{
+    scale: 1.0;
+}
+.container-m3{
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+.titulo-slider{
+    color: white;
+    justify-content: center;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: bold;
+    font-size: 18px;
+}
+section.slider{
+    margin:  0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+    margin-top: -100px;
+}
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+.slider-content input{
+    display: none;
+}
+.slider-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+.slider-box img{
+    width: 100%;
+}
+.nav-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: 50%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-manual .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+.nav-manual .btn-1{
+    border: 1px solid greenyellow;
+    background: greenyellow;
+}
+.nav-manual .btn-1:hover , .nav-manual .btn-2:hover, .nav-manual .btn-3:hover{
+    transform: scale(1.1);
+}
+.nav-manual .btn-2{
+    border: 1px solid green;
+    background: green;
+}
+.nav-manual .btn-3{
+    border: 1px solid white;
+    background: white;
+}
+.primeiro img{
+    margin-top: -25px;
+    width: 90%;
+}
+@media screen and (min-width:1000px) and (max-width:1400px){
+    .slider-box img{
+        width: 70%;
+    }
+    .nav-manual{
+        position: absolute;
+        width: 100%;
+        margin-top: 35%;
+        display: flex;
+        justify-content: center;
+    }
+    .primeiro img{
+        margin-top: -15px;
+        width: 60%;
+    }
+    .slider-box{
+        width: 25%;
+        height: auto;
+        position: relative;
+        text-align: center;
+        transition: 1s;
+    }
+}
+@media(max-width:700px){
+    section.slider{
+        margin-top: 0px;
+    }
+    .slider-box img{
+        width: 100%;
+    }
+}
+
+main.blog{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 22px;
+    margin-top: -50px;
+}
+main.blog section.conforto{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    margin-left: -50px;
+}
+main.blog section.conforto:first-child{
+    margin-left: 0;
+}
+main.blog section.conforto .blog-img{
+    max-width: 300px;
+
+}
+main.blog section.conforto img{
+    width: 100%;
+    height: 35vh;
+}
+main.blog section.conforto{
+    color: white;
+}
+main.blog section.conforto span{
+    line-height: 3;
+
+    color: red;
+    font-family: sans-serif;
+    font-size: 11px;
+}
+main.blog section.conforto h1{
+    font-family: 'roboto';
+    font-weight: 800;
+    text-transform: uppercase;
+}
+main.blog section.conforto p{
+    font-family: 'poppins';
+    font-weight: 800;
+    font-size: 15px;
+    color: #bbb9b9;
+}
+main.blog section.conforto a{
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+    font-family: 'poppins';
+    font-weight: bolder;
+    position: relative;
+    margin-top: 10px;
+}
+main.blog section.conforto a::after{
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background: brown;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out all;
+}
+main.blog section.conforto a:hover::after{
+    width: 20%;
+}
+@media(max-width:700px){
+    main.blog{
+        flex-direction: column;
+        width: 100%;
+    }
+    main.blog section.conforto{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+}
+.marcas-flex{
+    margin: 0 auto;
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 100px;
+}
+.marcas-flex > .icons{
+    margin: 1 1 80px;
+    margin: 10px;
+}
+.icons{
+    display: flex;
+    width: 80px;
+    height: auto;
+}
+.icons img{
+    width: 100%;
+    filter: opacity(60%);
+
+}
+.icons img:hover{
+    filter: opacity(100%);
+
+}
+footer{
+    padding: 32px;
+    display: flex;
+   justify-content: center;
+   gap: 5rem;
+   margin-top: 100px;
+
+}
+
+.logo-footer{
+    color: white;
+    align-items: center;
+    text-align: left;
+    font-family: 'poppins';
+    font-weight: bolder;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.logo-footer span{
+    font-size: 35px;
+    margin-top: 3px;
+}
+.container-footer{
+    text-align: center;
+    color: white;
+    display: flex;
+    gap: 4rem;
+}
+.container-footer h1{
+    font-family: 'poppins';
+    font-family: 200;
+    color: #7c7c7c;
+}
+.container-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'roboto';
+    line-height: 2;
+    text-transform: uppercase;
+}
+.sociais i{
+    line-height: 2;
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+.container-footer a:hover{
+    text-decoration: underline;
+}
+.sociais i:hover{
+    color: brown;
+}
+@media(max-width:900px){
+    footer{
+        flex-direction: column;
+    }
+    .container-footer{
+        flex-direction: column;
+    }
+}
